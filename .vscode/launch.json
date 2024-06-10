@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/Users/proto/Documents/GitHub/FYP/OFFLINE/Python_Scripts/main.py",
+            "console": "integratedTerminal",
+            "args": ["F", "--port", "5", "--baud", "115200", "--reps", "5"],
+            "autoReload": {
+                "enable": false
+            },
+            "subProcess": true,
+            "cwd": "${workspaceFolder}/OFFLINE/Python_Scripts",
+            "justMyCode": true,
+        }
+    ]
+}

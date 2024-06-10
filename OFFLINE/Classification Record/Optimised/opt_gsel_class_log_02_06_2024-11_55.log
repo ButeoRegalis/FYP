@@ -1,0 +1,129 @@
+INFO:Classification: Started
+INFO:Classification: Attempting to open file
+INFO:Classification: File opened
+INFO:Classification: Importing data...
+INFO:Classification: select flag enabled
+INFO:Classification: Gestures Selected ['asl for 3', 'asl for 4']
+INFO:Classification: No. Training Samples: 160
+INFO:Classification: No. Testing Samples: 40
+INFO:Classification: Test Set, Class Sample Distribution: [20, 20]
+INFO:Classification: Optimised Process
+INFO:Classification: Out of the previously selected models, we keep all the
+models within one standard deviation of the highest recall model:
+INFO:Classification: precision: 0.787 (±0.116),
+ recall: 0.787 (±0.116),
+ for {'selector__direction': 'backward', 'selector__estimator': SVC(), 'selector__n_features_to_select': 7}
+INFO:Classification: 
+The selected final model is the one with the highest recall and precision.
+Selected Model:
+mean_score_time                                                       0.004192
+mean_test_recall_micro                                                  0.7875
+std_test_recall_micro                                                  0.11592
+mean_test_precision_micro                                               0.7875
+std_test_precision_micro                                               0.11592
+rank_test_recall_micro                                                       1
+rank_test_precision_micro                                                    1
+params                       {'selector__direction': 'backward', 'selector_...
+Name: 22, dtype: object
+INFO:Classification: Feature Selection Duration: ~2 minutes
+INFO:Classification: Optimal Features: ['mav', 'rms', 'wl', 'zc', 'wa', 'hj_m', 'hj_c']
+INFO:Classification: Out of the previously selected models, we keep all the
+models within one standard deviation of the highest recall model:
+INFO:Classification: precision: 0.787 (±0.116),
+ recall: 0.787 (±0.116),
+ for {'classifier': SVC(), 'classifier__C': 1.0, 'classifier__decision_function_shape': 'ovr', 'classifier__gamma': 'scale', 'classifier__kernel': 'rbf'}
+INFO:Classification: precision: 0.787 (±0.116),
+ recall: 0.787 (±0.116),
+ for {'classifier': SVC(), 'classifier__C': 1.0, 'classifier__decision_function_shape': 'ovo', 'classifier__gamma': 'scale', 'classifier__kernel': 'rbf'}
+INFO:Classification: precision: 0.806 (±0.113),
+ recall: 0.806 (±0.113),
+ for {'classifier': SVC(), 'classifier__C': 10.0, 'classifier__decision_function_shape': 'ovr', 'classifier__gamma': 'scale', 'classifier__kernel': 'linear'}
+INFO:Classification: precision: 0.794 (±0.089),
+ recall: 0.794 (±0.089),
+ for {'classifier': SVC(), 'classifier__C': 10.0, 'classifier__decision_function_shape': 'ovr', 'classifier__gamma': 'auto', 'classifier__kernel': 'rbf'}
+INFO:Classification: precision: 0.806 (±0.113),
+ recall: 0.806 (±0.113),
+ for {'classifier': SVC(), 'classifier__C': 10.0, 'classifier__decision_function_shape': 'ovr', 'classifier__gamma': 'auto', 'classifier__kernel': 'linear'}
+INFO:Classification: precision: 0.806 (±0.113),
+ recall: 0.806 (±0.113),
+ for {'classifier': SVC(), 'classifier__C': 10.0, 'classifier__decision_function_shape': 'ovr', 'classifier__gamma': 0.001, 'classifier__kernel': 'linear'}
+INFO:Classification: precision: 0.806 (±0.113),
+ recall: 0.806 (±0.113),
+ for {'classifier': SVC(), 'classifier__C': 10.0, 'classifier__decision_function_shape': 'ovr', 'classifier__gamma': 0.0001, 'classifier__kernel': 'linear'}
+INFO:Classification: precision: 0.806 (±0.113),
+ recall: 0.806 (±0.113),
+ for {'classifier': SVC(), 'classifier__C': 10.0, 'classifier__decision_function_shape': 'ovo', 'classifier__gamma': 'scale', 'classifier__kernel': 'linear'}
+INFO:Classification: precision: 0.794 (±0.089),
+ recall: 0.794 (±0.089),
+ for {'classifier': SVC(), 'classifier__C': 10.0, 'classifier__decision_function_shape': 'ovo', 'classifier__gamma': 'auto', 'classifier__kernel': 'rbf'}
+INFO:Classification: precision: 0.806 (±0.113),
+ recall: 0.806 (±0.113),
+ for {'classifier': SVC(), 'classifier__C': 10.0, 'classifier__decision_function_shape': 'ovo', 'classifier__gamma': 'auto', 'classifier__kernel': 'linear'}
+INFO:Classification: precision: 0.806 (±0.113),
+ recall: 0.806 (±0.113),
+ for {'classifier': SVC(), 'classifier__C': 10.0, 'classifier__decision_function_shape': 'ovo', 'classifier__gamma': 0.001, 'classifier__kernel': 'linear'}
+INFO:Classification: precision: 0.806 (±0.113),
+ recall: 0.806 (±0.113),
+ for {'classifier': SVC(), 'classifier__C': 10.0, 'classifier__decision_function_shape': 'ovo', 'classifier__gamma': 0.0001, 'classifier__kernel': 'linear'}
+INFO:Classification: precision: 0.787 (±0.085),
+ recall: 0.787 (±0.085),
+ for {'classifier': SVC(), 'classifier__C': 1000.0, 'classifier__decision_function_shape': 'ovr', 'classifier__gamma': 0.001, 'classifier__kernel': 'rbf'}
+INFO:Classification: precision: 0.787 (±0.085),
+ recall: 0.787 (±0.085),
+ for {'classifier': SVC(), 'classifier__C': 1000.0, 'classifier__decision_function_shape': 'ovo', 'classifier__gamma': 0.001, 'classifier__kernel': 'rbf'}
+INFO:Classification: precision: 0.794 (±0.105),
+ recall: 0.794 (±0.105),
+ for {'classifier': SVC(), 'classifier__C': 10000.0, 'classifier__decision_function_shape': 'ovr', 'classifier__gamma': 'scale', 'classifier__kernel': 'linear'}
+INFO:Classification: precision: 0.794 (±0.105),
+ recall: 0.794 (±0.105),
+ for {'classifier': SVC(), 'classifier__C': 10000.0, 'classifier__decision_function_shape': 'ovr', 'classifier__gamma': 'auto', 'classifier__kernel': 'linear'}
+INFO:Classification: precision: 0.794 (±0.128),
+ recall: 0.794 (±0.128),
+ for {'classifier': SVC(), 'classifier__C': 10000.0, 'classifier__decision_function_shape': 'ovr', 'classifier__gamma': 0.001, 'classifier__kernel': 'rbf'}
+INFO:Classification: precision: 0.794 (±0.105),
+ recall: 0.794 (±0.105),
+ for {'classifier': SVC(), 'classifier__C': 10000.0, 'classifier__decision_function_shape': 'ovr', 'classifier__gamma': 0.001, 'classifier__kernel': 'linear'}
+INFO:Classification: precision: 0.794 (±0.105),
+ recall: 0.794 (±0.105),
+ for {'classifier': SVC(), 'classifier__C': 10000.0, 'classifier__decision_function_shape': 'ovr', 'classifier__gamma': 0.0001, 'classifier__kernel': 'linear'}
+INFO:Classification: precision: 0.794 (±0.105),
+ recall: 0.794 (±0.105),
+ for {'classifier': SVC(), 'classifier__C': 10000.0, 'classifier__decision_function_shape': 'ovo', 'classifier__gamma': 'scale', 'classifier__kernel': 'linear'}
+INFO:Classification: precision: 0.794 (±0.105),
+ recall: 0.794 (±0.105),
+ for {'classifier': SVC(), 'classifier__C': 10000.0, 'classifier__decision_function_shape': 'ovo', 'classifier__gamma': 'auto', 'classifier__kernel': 'linear'}
+INFO:Classification: precision: 0.794 (±0.128),
+ recall: 0.794 (±0.128),
+ for {'classifier': SVC(), 'classifier__C': 10000.0, 'classifier__decision_function_shape': 'ovo', 'classifier__gamma': 0.001, 'classifier__kernel': 'rbf'}
+INFO:Classification: precision: 0.794 (±0.105),
+ recall: 0.794 (±0.105),
+ for {'classifier': SVC(), 'classifier__C': 10000.0, 'classifier__decision_function_shape': 'ovo', 'classifier__gamma': 0.001, 'classifier__kernel': 'linear'}
+INFO:Classification: precision: 0.794 (±0.105),
+ recall: 0.794 (±0.105),
+ for {'classifier': SVC(), 'classifier__C': 10000.0, 'classifier__decision_function_shape': 'ovo', 'classifier__gamma': 0.0001, 'classifier__kernel': 'linear'}
+INFO:Classification: 
+The selected final model is the one with the highest recall and precision.
+Selected Model:
+mean_score_time                                                       0.005205
+mean_test_recall_micro                                                 0.80625
+std_test_recall_micro                                                 0.113365
+mean_test_precision_micro                                              0.80625
+std_test_precision_micro                                              0.113365
+rank_test_recall_micro                                                       1
+rank_test_precision_micro                                                    1
+params                       {'classifier': SVC(), 'classifier__C': 10.0, '...
+Name: 49, dtype: object
+INFO:Classification: Model + Hyperparameter Selection Duration: ~1 minutes
+INFO:Classification: Best estimator: Pipeline(steps=[('classifier', SVC(C=10.0, kernel='linear'))], verbose=True)
+INFO:Classification: Best params: {'memory': None, 'steps': [('classifier', SVC(C=10.0, kernel='linear'))], 'verbose': True, 'classifier': SVC(C=10.0, kernel='linear'), 'classifier__C': 10.0, 'classifier__break_ties': False, 'classifier__cache_size': 200, 'classifier__class_weight': None, 'classifier__coef0': 0.0, 'classifier__decision_function_shape': 'ovr', 'classifier__degree': 3, 'classifier__gamma': 'scale', 'classifier__kernel': 'linear', 'classifier__max_iter': -1, 'classifier__probability': False, 'classifier__random_state': None, 'classifier__shrinking': True, 'classifier__tol': 0.001, 'classifier__verbose': False}
+INFO:Classification:
+              precision    recall  f1-score   support
+
+           2       0.75      0.60      0.67        20
+           3       0.67      0.80      0.73        20
+
+    accuracy                           0.70        40
+   macro avg       0.71      0.70      0.70        40
+weighted avg       0.71      0.70      0.70        40
+
+INFO:Classification: Finished
