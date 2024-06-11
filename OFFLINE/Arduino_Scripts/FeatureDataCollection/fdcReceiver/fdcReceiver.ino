@@ -3,7 +3,7 @@
  * Hardware: Teensy 4.0
  * Process: OFFLINE Feature Data Collection
  * Owner: Dominic Hanssen
- * Last updated: 10/06/2024
+ * Last updated: 11/06/2024
  *
  * extract() function duration: 113 us
  * feature data transmission rate: every 5.025 s (does not include delays)
@@ -51,8 +51,8 @@ const byte masterAddress[] = {'T','X','a','a','a'};
 
 uint8_t startTimerValue0 = 0;
 
+double ch0_buffer_raw[buffer_raw_size] = {0};
 double ch1_buffer_raw[buffer_raw_size] = {0};
-double ch2_buffer_raw[buffer_raw_size] = {0};
 
 volatile bool write_flag = false;
 volatile uint16_t buffer_count = 0;
@@ -93,7 +93,9 @@ void setup()
   digitalWriteFast(ledPin, LOW);
 
   // Serial //
-  Serial.begin(115200); // ignored
+  #ifdef DEBUG
+    Serial.begin(115200); // ignored
+  #endif
 
   // Radio //
   bool rf = radio.begin();
@@ -114,7 +116,7 @@ void setup()
   radio.stopListening();
   radio.openWritingPipe(masterAddress);
   radio.openReadingPipe(1, slaveAddress);
-  delay(10000); // python script start delay
+  delay(20000); // 20s python script start delay
   radio.write(&startByte, sizeof(int));
   radio.startListening();
 
@@ -140,26 +142,19 @@ void loop()
   {
     write_flag = false;
 
-    #ifdef DEBUG
-      uint32_t start = micros();
-    #endif
+    extract(ch0_buffer_raw, 0);
     extract(ch1_buffer_raw, 1);
-    extract(ch2_buffer_raw, 2);
-    #ifdef DEBUG
-      uint32_t end = micros();
-      Serial.print("Total Extraction Duration: ");
-      Serial.println(end-start);
-    #endif
 
     for (int i = 0; i < buffer_raw_size; i++) // reset buffers to all 0
     {
+      ch0_buffer_raw[i] = 0.0;
       ch1_buffer_raw[i] = 0.0;
-      ch2_buffer_raw[i] = 0.0;
     }
     startTimerValue0 = timer0.begin(timer0_callback, period0); // restart timer
 
     #ifdef DEBUG
       Serial.println("Entering Read Mode.");
+      Serial.flush();
     #endif
     radio.stopListening();
     radio.write(&startByte, sizeof(int));
@@ -174,6 +169,7 @@ void extract(double *data, uint16_t channel_num)
   #ifdef DEBUG
     Serial.print("Starting Feature Extraction on Channel ");
     Serial.println(channel_num);
+    Serial.flush();
     uint32_t start = micros();
   #endif
 
@@ -209,6 +205,7 @@ void extract(double *data, uint16_t channel_num)
       Serial.print(", ");
     }
     Serial.println("]");
+    Serial.flush();
   #endif
 
   // Data Reduction
@@ -224,6 +221,7 @@ void extract(double *data, uint16_t channel_num)
   #ifdef DEBUG
     Serial.print("Buffer size: ");
     Serial.println(buffer_size);
+    Serial.flush();
   #endif
 
   // Mean Absolute Value (MAV)
@@ -360,16 +358,19 @@ void extract(double *data, uint16_t channel_num)
 
   // Write data to serial buffer
   Serial.write((const byte*)&fPkt, sizeof(fPkt));
+  Serial.flush();
 
   // Delay
   #ifdef DEBUG
     uint32_t end = micros();
+    Serial.println("");
     Serial.print("Channel ");
     Serial.println(channel_num);
     Serial.print(" Extraction Duration: ");
     Serial.println(end-start);
+    Serial.flush();
   #endif
-  delay(350); // python script read delay
+  delay(500); // python script read delay
 }
 
 
@@ -386,8 +387,8 @@ void timer0_callback(void)
     if (buffer_count < buffer_raw_size)
     {
       radio.read(&dPkt, sizeof(dPkt));
-      ch1_buffer_raw[buffer_count + 1] = (double)(dPkt.adcVal0 * (sysVol / pow(2, adcRes)));
-      ch2_buffer_raw[buffer_count + 1] = (double)(dPkt.adcVal1 * (sysVol / pow(2, adcRes)));
+      ch0_buffer_raw[buffer_count + 1] = (double)(dPkt.adcVal0 * (sysVol / pow(2, adcRes)));
+      ch1_buffer_raw[buffer_count + 1] = (double)(dPkt.adcVal1 * (sysVol / pow(2, adcRes)));
       buffer_count++;
     }
   }
@@ -397,6 +398,7 @@ void timer0_callback(void)
     write_flag = true;
     #ifdef DEBUG
       Serial.println("Entering Write Mode.");
+      Serial.flush();
     #endif
   }
 }

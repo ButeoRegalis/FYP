@@ -1,6 +1,6 @@
 # RAW DATA COLLECTION FUNCTION
 # STATUS: WORKING
-# LAST UPDATED: 10/06/2024
+# LAST UPDATED: 11/06/2024
 # NOTE: Repeated use will result in file being overwritten
 
 
@@ -8,14 +8,9 @@ import serial
 import struct
 import numpy as np
 import pandas as pd
-from config import gesture_names
+from config import NUM_GESTURES, BUFFER_RAW_SIZE, gesture_names
 
 
-NUM_GESTURES = 5
-
-startByte = b'\xff'
-endByte = b'\xfe'
-num_datapoints = 500
 filename = 'Raw_Data.xlsx'
 
 
@@ -50,21 +45,21 @@ def collectRawData(port: str, baud: int, repetitions: int) -> None:
             print("Serial connection established")
             print("Starting...")
 
-            labels = []
+            #labels = []
             dataframes = []
             columns = []
             for ges in range(0, NUM_GESTURES, 1):
                 print(f"Gesture: {gesture_names[ges]}")
                 for rep in range(0, repetitions, 1):
                     print(f"Repetition: {rep}")
-                    labels.append(gesture_names[ges])
+                    #labels.append(gesture_names[ges])
                     datapoints = [[], []]
-                    columns.append(['g' + str(object=ges) + '_r' + str(object=rep) + '_ch1', 'g' + str(object=ges) + '_r' + str(object=rep) + '_ch2'])
-                    for data in range(0, num_datapoints, 1):
+                    columns += ['g' + str(object=ges) + '_r' + str(object=rep) + '_ch0', 'g' + str(object=ges) + '_r' + str(object=rep) + '_ch1']
+                    for data in range(0, BUFFER_RAW_SIZE, 1):
                         # Read data
                         serial_read = link.read(size=8)
                         # Decode data
-                        data_struct = struct.unpack('ff', serial_read)
+                        data_struct = struct.unpack('=ff', serial_read)
                         #print(data_struct)
                         # Add data to list
                         datapoints[0].append(data_struct[0])
@@ -72,8 +67,8 @@ def collectRawData(port: str, baud: int, repetitions: int) -> None:
                     #print(datapoints)
                     dataframes.append(pd.DataFrame(data=datapoints, dtype=np.float16))
             #print(dataframes)
-            dataframe = pd.concat(objs=dataframes, axis=1, ignore_index=True, names=columns)
-            dataframe.to_excel(excel_writer=filename, sheet_name="Raw Data", float_format="%.4f", header=labels, index_label='index')
+            dataframe = pd.concat(objs=dataframes, axis=0, ignore_index=True).transpose()
+            dataframe.to_excel(excel_writer=filename, sheet_name="Raw Data", float_format="%.4f", header=columns, index_label='index')
 
         print(f"Serial Errors: {serial_errors}")
         print("Data Collection Completed Successfully")
