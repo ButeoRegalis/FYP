@@ -28,7 +28,7 @@ from config import columns, feature_names, gesture_names
 
 default = False  # Enable to generate default metrics for all models using default parameters
 select = False  # Enable to select which gesture to use (if false use all gestures)
-gesture_selection = [2, 3]  # indexes of selected gestures
+gesture_selection = [0, 1, 2, 3, 4]  # indexes of selected gestures
 cv_splits = 10
 
 logger = logging.getLogger(name=__name__)

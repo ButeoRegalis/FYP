@@ -1,0 +1,1169 @@
+INFO:Classification: Started
+INFO:Classification: Attempting to open file
+INFO:Classification: File opened
+INFO:Classification: Importing data...
+INFO:Classification: No. Training Samples: 400
+INFO:Classification: No. Testing Samples: 100
+INFO:Classification: Test Set, Class Sample Distribution: [20, 20, 20, 20, 20]
+INFO:Classification: Optimised Process
+INFO:Classification: Out of the previously selected models, we keep all the
+models within one standard deviation of the highest recall model:
+INFO:Classification: precision: 0.642 (±0.061),
+ recall: 0.642 (±0.061),
+ for {'selector__direction': 'forward', 'selector__estimator': SVC(), 'selector__n_features_to_select': 6}
+INFO:Classification: precision: 0.670 (±0.061),
+ recall: 0.670 (±0.061),
+ for {'selector__direction': 'forward', 'selector__estimator': SVC(), 'selector__n_features_to_select': 7}
+INFO:Classification: precision: 0.693 (±0.051),
+ recall: 0.693 (±0.051),
+ for {'selector__direction': 'forward', 'selector__estimator': SVC(), 'selector__n_features_to_select': 8}
+INFO:Classification: precision: 0.695 (±0.042),
+ recall: 0.695 (±0.042),
+ for {'selector__direction': 'forward', 'selector__estimator': SVC(), 'selector__n_features_to_select': 9}
+INFO:Classification: precision: 0.698 (±0.051),
+ recall: 0.698 (±0.051),
+ for {'selector__direction': 'forward', 'selector__estimator': SVC(), 'selector__n_features_to_select': 10}
+INFO:Classification: precision: 0.720 (±0.043),
+ recall: 0.720 (±0.043),
+ for {'selector__direction': 'forward', 'selector__estimator': SVC(), 'selector__n_features_to_select': 11}
+INFO:Classification: precision: 0.717 (±0.056),
+ recall: 0.717 (±0.056),
+ for {'selector__direction': 'forward', 'selector__estimator': SVC(), 'selector__n_features_to_select': 12}
+INFO:Classification: precision: 0.713 (±0.063),
+ recall: 0.713 (±0.063),
+ for {'selector__direction': 'forward', 'selector__estimator': SVC(), 'selector__n_features_to_select': 13}
+INFO:Classification: precision: 0.710 (±0.069),
+ recall: 0.710 (±0.069),
+ for {'selector__direction': 'forward', 'selector__estimator': SVC(), 'selector__n_features_to_select': 14}
+INFO:Classification: precision: 0.693 (±0.058),
+ recall: 0.693 (±0.058),
+ for {'selector__direction': 'forward', 'selector__estimator': SVC(), 'selector__n_features_to_select': 15}
+INFO:Classification: precision: 0.642 (±0.052),
+ recall: 0.642 (±0.052),
+ for {'selector__direction': 'forward', 'selector__estimator': KNeighborsClassifier(), 'selector__n_features_to_select': 5}
+INFO:Classification: precision: 0.660 (±0.048),
+ recall: 0.660 (±0.048),
+ for {'selector__direction': 'forward', 'selector__estimator': KNeighborsClassifier(), 'selector__n_features_to_select': 6}
+INFO:Classification: precision: 0.672 (±0.055),
+ recall: 0.672 (±0.055),
+ for {'selector__direction': 'forward', 'selector__estimator': KNeighborsClassifier(), 'selector__n_features_to_select': 7}
+INFO:Classification: precision: 0.672 (±0.063),
+ recall: 0.672 (±0.063),
+ for {'selector__direction': 'forward', 'selector__estimator': KNeighborsClassifier(), 'selector__n_features_to_select': 8}
+INFO:Classification: precision: 0.690 (±0.059),
+ recall: 0.690 (±0.059),
+ for {'selector__direction': 'forward', 'selector__estimator': KNeighborsClassifier(), 'selector__n_features_to_select': 9}
+INFO:Classification: precision: 0.700 (±0.059),
+ recall: 0.700 (±0.059),
+ for {'selector__direction': 'forward', 'selector__estimator': KNeighborsClassifier(), 'selector__n_features_to_select': 10}
+INFO:Classification: precision: 0.713 (±0.058),
+ recall: 0.713 (±0.058),
+ for {'selector__direction': 'forward', 'selector__estimator': KNeighborsClassifier(), 'selector__n_features_to_select': 11}
+INFO:Classification: precision: 0.700 (±0.040),
+ recall: 0.700 (±0.040),
+ for {'selector__direction': 'forward', 'selector__estimator': KNeighborsClassifier(), 'selector__n_features_to_select': 12}
+INFO:Classification: precision: 0.710 (±0.042),
+ recall: 0.710 (±0.042),
+ for {'selector__direction': 'forward', 'selector__estimator': KNeighborsClassifier(), 'selector__n_features_to_select': 13}
+INFO:Classification: precision: 0.728 (±0.060),
+ recall: 0.728 (±0.060),
+ for {'selector__direction': 'forward', 'selector__estimator': KNeighborsClassifier(), 'selector__n_features_to_select': 14}
+INFO:Classification: precision: 0.700 (±0.063),
+ recall: 0.700 (±0.063),
+ for {'selector__direction': 'forward', 'selector__estimator': KNeighborsClassifier(), 'selector__n_features_to_select': 15}
+INFO:Classification: precision: 0.645 (±0.071),
+ recall: 0.645 (±0.071),
+ for {'selector__direction': 'forward', 'selector__estimator': ComplementNB(), 'selector__n_features_to_select': 4}
+INFO:Classification: precision: 0.657 (±0.075),
+ recall: 0.657 (±0.075),
+ for {'selector__direction': 'forward', 'selector__estimator': ComplementNB(), 'selector__n_features_to_select': 5}
+INFO:Classification: precision: 0.655 (±0.082),
+ recall: 0.655 (±0.082),
+ for {'selector__direction': 'forward', 'selector__estimator': ComplementNB(), 'selector__n_features_to_select': 6}
+INFO:Classification: precision: 0.653 (±0.072),
+ recall: 0.653 (±0.072),
+ for {'selector__direction': 'forward', 'selector__estimator': ComplementNB(), 'selector__n_features_to_select': 7}
+INFO:Classification: precision: 0.680 (±0.058),
+ recall: 0.680 (±0.058),
+ for {'selector__direction': 'forward', 'selector__estimator': ComplementNB(), 'selector__n_features_to_select': 8}
+INFO:Classification: precision: 0.677 (±0.064),
+ recall: 0.677 (±0.064),
+ for {'selector__direction': 'forward', 'selector__estimator': ComplementNB(), 'selector__n_features_to_select': 9}
+INFO:Classification: precision: 0.680 (±0.075),
+ recall: 0.680 (±0.075),
+ for {'selector__direction': 'forward', 'selector__estimator': ComplementNB(), 'selector__n_features_to_select': 10}
+INFO:Classification: precision: 0.685 (±0.077),
+ recall: 0.685 (±0.077),
+ for {'selector__direction': 'forward', 'selector__estimator': ComplementNB(), 'selector__n_features_to_select': 11}
+INFO:Classification: precision: 0.682 (±0.075),
+ recall: 0.682 (±0.075),
+ for {'selector__direction': 'forward', 'selector__estimator': ComplementNB(), 'selector__n_features_to_select': 12}
+INFO:Classification: precision: 0.695 (±0.060),
+ recall: 0.695 (±0.060),
+ for {'selector__direction': 'forward', 'selector__estimator': ComplementNB(), 'selector__n_features_to_select': 13}
+INFO:Classification: precision: 0.695 (±0.056),
+ recall: 0.695 (±0.056),
+ for {'selector__direction': 'forward', 'selector__estimator': ComplementNB(), 'selector__n_features_to_select': 14}
+INFO:Classification: precision: 0.687 (±0.066),
+ recall: 0.687 (±0.066),
+ for {'selector__direction': 'forward', 'selector__estimator': ComplementNB(), 'selector__n_features_to_select': 15}
+INFO:Classification: precision: 0.640 (±0.064),
+ recall: 0.640 (±0.064),
+ for {'selector__direction': 'backward', 'selector__estimator': SVC(), 'selector__n_features_to_select': 4}
+INFO:Classification: precision: 0.657 (±0.043),
+ recall: 0.657 (±0.043),
+ for {'selector__direction': 'backward', 'selector__estimator': SVC(), 'selector__n_features_to_select': 5}
+INFO:Classification: precision: 0.700 (±0.049),
+ recall: 0.700 (±0.049),
+ for {'selector__direction': 'backward', 'selector__estimator': SVC(), 'selector__n_features_to_select': 6}
+INFO:Classification: precision: 0.687 (±0.049),
+ recall: 0.687 (±0.049),
+ for {'selector__direction': 'backward', 'selector__estimator': SVC(), 'selector__n_features_to_select': 7}
+INFO:Classification: precision: 0.688 (±0.041),
+ recall: 0.688 (±0.041),
+ for {'selector__direction': 'backward', 'selector__estimator': SVC(), 'selector__n_features_to_select': 8}
+INFO:Classification: precision: 0.702 (±0.049),
+ recall: 0.702 (±0.049),
+ for {'selector__direction': 'backward', 'selector__estimator': SVC(), 'selector__n_features_to_select': 9}
+INFO:Classification: precision: 0.723 (±0.034),
+ recall: 0.723 (±0.034),
+ for {'selector__direction': 'backward', 'selector__estimator': SVC(), 'selector__n_features_to_select': 10}
+INFO:Classification: precision: 0.722 (±0.033),
+ recall: 0.722 (±0.033),
+ for {'selector__direction': 'backward', 'selector__estimator': SVC(), 'selector__n_features_to_select': 11}
+INFO:Classification: precision: 0.713 (±0.041),
+ recall: 0.713 (±0.041),
+ for {'selector__direction': 'backward', 'selector__estimator': SVC(), 'selector__n_features_to_select': 12}
+INFO:Classification: precision: 0.710 (±0.060),
+ recall: 0.710 (±0.060),
+ for {'selector__direction': 'backward', 'selector__estimator': SVC(), 'selector__n_features_to_select': 13}
+INFO:Classification: precision: 0.705 (±0.059),
+ recall: 0.705 (±0.059),
+ for {'selector__direction': 'backward', 'selector__estimator': SVC(), 'selector__n_features_to_select': 14}
+INFO:Classification: precision: 0.693 (±0.050),
+ recall: 0.693 (±0.050),
+ for {'selector__direction': 'backward', 'selector__estimator': SVC(), 'selector__n_features_to_select': 15}
+INFO:Classification: precision: 0.662 (±0.063),
+ recall: 0.662 (±0.063),
+ for {'selector__direction': 'backward', 'selector__estimator': KNeighborsClassifier(), 'selector__n_features_to_select': 6}
+INFO:Classification: precision: 0.670 (±0.053),
+ recall: 0.670 (±0.053),
+ for {'selector__direction': 'backward', 'selector__estimator': KNeighborsClassifier(), 'selector__n_features_to_select': 7}
+INFO:Classification: precision: 0.672 (±0.042),
+ recall: 0.672 (±0.042),
+ for {'selector__direction': 'backward', 'selector__estimator': KNeighborsClassifier(), 'selector__n_features_to_select': 8}
+INFO:Classification: precision: 0.673 (±0.051),
+ recall: 0.673 (±0.051),
+ for {'selector__direction': 'backward', 'selector__estimator': KNeighborsClassifier(), 'selector__n_features_to_select': 9}
+INFO:Classification: precision: 0.690 (±0.046),
+ recall: 0.690 (±0.046),
+ for {'selector__direction': 'backward', 'selector__estimator': KNeighborsClassifier(), 'selector__n_features_to_select': 10}
+INFO:Classification: precision: 0.688 (±0.042),
+ recall: 0.688 (±0.042),
+ for {'selector__direction': 'backward', 'selector__estimator': KNeighborsClassifier(), 'selector__n_features_to_select': 11}
+INFO:Classification: precision: 0.710 (±0.063),
+ recall: 0.710 (±0.063),
+ for {'selector__direction': 'backward', 'selector__estimator': KNeighborsClassifier(), 'selector__n_features_to_select': 12}
+INFO:Classification: precision: 0.705 (±0.050),
+ recall: 0.705 (±0.050),
+ for {'selector__direction': 'backward', 'selector__estimator': KNeighborsClassifier(), 'selector__n_features_to_select': 13}
+INFO:Classification: precision: 0.693 (±0.069),
+ recall: 0.693 (±0.069),
+ for {'selector__direction': 'backward', 'selector__estimator': KNeighborsClassifier(), 'selector__n_features_to_select': 14}
+INFO:Classification: precision: 0.682 (±0.069),
+ recall: 0.682 (±0.069),
+ for {'selector__direction': 'backward', 'selector__estimator': KNeighborsClassifier(), 'selector__n_features_to_select': 15}
+INFO:Classification: precision: 0.653 (±0.070),
+ recall: 0.653 (±0.070),
+ for {'selector__direction': 'backward', 'selector__estimator': ComplementNB(), 'selector__n_features_to_select': 8}
+INFO:Classification: precision: 0.650 (±0.061),
+ recall: 0.650 (±0.061),
+ for {'selector__direction': 'backward', 'selector__estimator': ComplementNB(), 'selector__n_features_to_select': 9}
+INFO:Classification: precision: 0.655 (±0.074),
+ recall: 0.655 (±0.074),
+ for {'selector__direction': 'backward', 'selector__estimator': ComplementNB(), 'selector__n_features_to_select': 10}
+INFO:Classification: precision: 0.667 (±0.071),
+ recall: 0.667 (±0.071),
+ for {'selector__direction': 'backward', 'selector__estimator': ComplementNB(), 'selector__n_features_to_select': 11}
+INFO:Classification: precision: 0.675 (±0.056),
+ recall: 0.675 (±0.056),
+ for {'selector__direction': 'backward', 'selector__estimator': ComplementNB(), 'selector__n_features_to_select': 12}
+INFO:Classification: precision: 0.672 (±0.048),
+ recall: 0.672 (±0.048),
+ for {'selector__direction': 'backward', 'selector__estimator': ComplementNB(), 'selector__n_features_to_select': 13}
+INFO:Classification: precision: 0.682 (±0.068),
+ recall: 0.682 (±0.068),
+ for {'selector__direction': 'backward', 'selector__estimator': ComplementNB(), 'selector__n_features_to_select': 14}
+INFO:Classification: precision: 0.687 (±0.066),
+ recall: 0.687 (±0.066),
+ for {'selector__direction': 'backward', 'selector__estimator': ComplementNB(), 'selector__n_features_to_select': 15}
+INFO:Classification: 
+The selected final model is the one with the highest recall and precision.
+Selected Model:
+mean_score_time                                                       0.005663
+mean_test_recall_micro                                                  0.7275
+std_test_recall_micro                                                 0.059634
+mean_test_precision_micro                                               0.7275
+std_test_precision_micro                                              0.059634
+rank_test_recall_micro                                                       1
+rank_test_precision_micro                                                    1
+params                       {'selector__direction': 'forward', 'selector__...
+Name: 29, dtype: object
+INFO:Classification: Feature Selection Duration: ~28 minutes
+INFO:Classification: Optimal Features: ['ch0_mav', 'ch1_mav', 'ch0_rms', 'ch1_rms', 'ch0_wl', 'ch1_wl', 'ch0_zc', 'ch1_zc', 'ch0_wa', 'ch1_wa', 'ch1_hj_a', 'ch0_hj_m', 'ch1_hj_m', 'ch0_hj_c']
+INFO:Classification: Out of the previously selected models, we keep all the
+models within one standard deviation of the highest recall model:
+INFO:Classification: precision: 0.715 (±0.053),
+ recall: 0.715 (±0.053),
+ for {'classifier': SVC(), 'classifier__C': 1.0, 'classifier__decision_function_shape': 'ovr', 'classifier__gamma': 'scale', 'classifier__kernel': 'rbf'}
+INFO:Classification: precision: 0.715 (±0.053),
+ recall: 0.715 (±0.053),
+ for {'classifier': SVC(), 'classifier__C': 1.0, 'classifier__decision_function_shape': 'ovo', 'classifier__gamma': 'scale', 'classifier__kernel': 'rbf'}
+INFO:Classification: precision: 0.715 (±0.060),
+ recall: 0.715 (±0.060),
+ for {'classifier': SVC(), 'classifier__C': 10.0, 'classifier__decision_function_shape': 'ovr', 'classifier__gamma': 'scale', 'classifier__kernel': 'rbf'}
+INFO:Classification: precision: 0.715 (±0.060),
+ recall: 0.715 (±0.060),
+ for {'classifier': SVC(), 'classifier__C': 10.0, 'classifier__decision_function_shape': 'ovo', 'classifier__gamma': 'scale', 'classifier__kernel': 'rbf'}
+INFO:Classification: precision: 0.693 (±0.054),
+ recall: 0.693 (±0.054),
+ for {'classifier': SVC(), 'classifier__C': 1000.0, 'classifier__decision_function_shape': 'ovr', 'classifier__gamma': 'auto', 'classifier__kernel': 'rbf'}
+INFO:Classification: precision: 0.693 (±0.054),
+ recall: 0.693 (±0.054),
+ for {'classifier': SVC(), 'classifier__C': 1000.0, 'classifier__decision_function_shape': 'ovo', 'classifier__gamma': 'auto', 'classifier__kernel': 'rbf'}
+INFO:Classification: precision: 0.695 (±0.071),
+ recall: 0.695 (±0.071),
+ for {'classifier': SVC(), 'classifier__C': 10000.0, 'classifier__decision_function_shape': 'ovr', 'classifier__gamma': 'auto', 'classifier__kernel': 'rbf'}
+INFO:Classification: precision: 0.695 (±0.071),
+ recall: 0.695 (±0.071),
+ for {'classifier': SVC(), 'classifier__C': 10000.0, 'classifier__decision_function_shape': 'ovo', 'classifier__gamma': 'auto', 'classifier__kernel': 'rbf'}
+INFO:Classification: precision: 0.680 (±0.051),
+ recall: 0.680 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.685 (±0.051),
+ recall: 0.685 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.042),
+ recall: 0.677 (±0.042),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.682 (±0.054),
+ recall: 0.682 (±0.054),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.048),
+ recall: 0.677 (±0.048),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 7, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.052),
+ recall: 0.680 (±0.052),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.690 (±0.050),
+ recall: 0.690 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.688 (±0.049),
+ recall: 0.688 (±0.049),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.050),
+ recall: 0.680 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.058),
+ recall: 0.680 (±0.058),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.700 (±0.060),
+ recall: 0.700 (±0.060),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.675 (±0.067),
+ recall: 0.675 (±0.067),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.683 (±0.068),
+ recall: 0.683 (±0.068),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.695 (±0.050),
+ recall: 0.695 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.685 (±0.069),
+ recall: 0.685 (±0.069),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.051),
+ recall: 0.680 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.685 (±0.051),
+ recall: 0.685 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.042),
+ recall: 0.677 (±0.042),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.682 (±0.054),
+ recall: 0.682 (±0.054),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.048),
+ recall: 0.677 (±0.048),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 7, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.052),
+ recall: 0.680 (±0.052),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.690 (±0.050),
+ recall: 0.690 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.688 (±0.049),
+ recall: 0.688 (±0.049),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.050),
+ recall: 0.680 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.058),
+ recall: 0.680 (±0.058),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.700 (±0.060),
+ recall: 0.700 (±0.060),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.675 (±0.067),
+ recall: 0.675 (±0.067),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.683 (±0.068),
+ recall: 0.683 (±0.068),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.695 (±0.050),
+ recall: 0.695 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.685 (±0.069),
+ recall: 0.685 (±0.069),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.051),
+ recall: 0.680 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.685 (±0.051),
+ recall: 0.685 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.042),
+ recall: 0.677 (±0.042),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.682 (±0.054),
+ recall: 0.682 (±0.054),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.048),
+ recall: 0.677 (±0.048),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 7, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.052),
+ recall: 0.680 (±0.052),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.690 (±0.050),
+ recall: 0.690 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.688 (±0.049),
+ recall: 0.688 (±0.049),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.050),
+ recall: 0.680 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.058),
+ recall: 0.680 (±0.058),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.700 (±0.060),
+ recall: 0.700 (±0.060),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.675 (±0.067),
+ recall: 0.675 (±0.067),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.683 (±0.068),
+ recall: 0.683 (±0.068),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.695 (±0.050),
+ recall: 0.695 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.685 (±0.069),
+ recall: 0.685 (±0.069),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.051),
+ recall: 0.680 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.685 (±0.051),
+ recall: 0.685 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.042),
+ recall: 0.677 (±0.042),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.682 (±0.054),
+ recall: 0.682 (±0.054),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.048),
+ recall: 0.677 (±0.048),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 7, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.052),
+ recall: 0.680 (±0.052),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.690 (±0.050),
+ recall: 0.690 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.688 (±0.049),
+ recall: 0.688 (±0.049),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.050),
+ recall: 0.680 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.058),
+ recall: 0.680 (±0.058),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.700 (±0.060),
+ recall: 0.700 (±0.060),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.675 (±0.067),
+ recall: 0.675 (±0.067),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.683 (±0.068),
+ recall: 0.683 (±0.068),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.695 (±0.050),
+ recall: 0.695 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.685 (±0.069),
+ recall: 0.685 (±0.069),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.051),
+ recall: 0.680 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.685 (±0.051),
+ recall: 0.685 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.042),
+ recall: 0.677 (±0.042),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.682 (±0.054),
+ recall: 0.682 (±0.054),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.048),
+ recall: 0.677 (±0.048),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 7, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.052),
+ recall: 0.680 (±0.052),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.690 (±0.050),
+ recall: 0.690 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.688 (±0.049),
+ recall: 0.688 (±0.049),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.050),
+ recall: 0.680 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.058),
+ recall: 0.680 (±0.058),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.700 (±0.060),
+ recall: 0.700 (±0.060),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.675 (±0.067),
+ recall: 0.675 (±0.067),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.683 (±0.068),
+ recall: 0.683 (±0.068),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.695 (±0.050),
+ recall: 0.695 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.685 (±0.069),
+ recall: 0.685 (±0.069),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'auto', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.051),
+ recall: 0.680 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.685 (±0.051),
+ recall: 0.685 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.042),
+ recall: 0.677 (±0.042),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.682 (±0.054),
+ recall: 0.682 (±0.054),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.048),
+ recall: 0.677 (±0.048),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 7, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.052),
+ recall: 0.680 (±0.052),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.690 (±0.050),
+ recall: 0.690 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.688 (±0.049),
+ recall: 0.688 (±0.049),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.050),
+ recall: 0.680 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.058),
+ recall: 0.680 (±0.058),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.700 (±0.060),
+ recall: 0.700 (±0.060),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.675 (±0.067),
+ recall: 0.675 (±0.067),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.683 (±0.068),
+ recall: 0.683 (±0.068),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.695 (±0.050),
+ recall: 0.695 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.685 (±0.069),
+ recall: 0.685 (±0.069),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.051),
+ recall: 0.680 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.685 (±0.051),
+ recall: 0.685 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.042),
+ recall: 0.677 (±0.042),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.682 (±0.054),
+ recall: 0.682 (±0.054),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.048),
+ recall: 0.677 (±0.048),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 7, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.052),
+ recall: 0.680 (±0.052),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.690 (±0.050),
+ recall: 0.690 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.688 (±0.049),
+ recall: 0.688 (±0.049),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.050),
+ recall: 0.680 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.058),
+ recall: 0.680 (±0.058),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.700 (±0.060),
+ recall: 0.700 (±0.060),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.675 (±0.067),
+ recall: 0.675 (±0.067),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.683 (±0.068),
+ recall: 0.683 (±0.068),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.695 (±0.050),
+ recall: 0.695 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.685 (±0.069),
+ recall: 0.685 (±0.069),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.051),
+ recall: 0.680 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.685 (±0.051),
+ recall: 0.685 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.042),
+ recall: 0.677 (±0.042),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.682 (±0.054),
+ recall: 0.682 (±0.054),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.048),
+ recall: 0.677 (±0.048),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 7, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.052),
+ recall: 0.680 (±0.052),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.690 (±0.050),
+ recall: 0.690 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.688 (±0.049),
+ recall: 0.688 (±0.049),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.050),
+ recall: 0.680 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.058),
+ recall: 0.680 (±0.058),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.700 (±0.060),
+ recall: 0.700 (±0.060),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.675 (±0.067),
+ recall: 0.675 (±0.067),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.683 (±0.068),
+ recall: 0.683 (±0.068),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.695 (±0.050),
+ recall: 0.695 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.685 (±0.069),
+ recall: 0.685 (±0.069),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.051),
+ recall: 0.680 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.685 (±0.051),
+ recall: 0.685 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.042),
+ recall: 0.677 (±0.042),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.682 (±0.054),
+ recall: 0.682 (±0.054),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.048),
+ recall: 0.677 (±0.048),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 7, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.052),
+ recall: 0.680 (±0.052),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.690 (±0.050),
+ recall: 0.690 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.688 (±0.049),
+ recall: 0.688 (±0.049),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.050),
+ recall: 0.680 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.058),
+ recall: 0.680 (±0.058),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.700 (±0.060),
+ recall: 0.700 (±0.060),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.675 (±0.067),
+ recall: 0.675 (±0.067),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.683 (±0.068),
+ recall: 0.683 (±0.068),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.695 (±0.050),
+ recall: 0.695 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.685 (±0.069),
+ recall: 0.685 (±0.069),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.051),
+ recall: 0.680 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.685 (±0.051),
+ recall: 0.685 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.042),
+ recall: 0.677 (±0.042),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.682 (±0.054),
+ recall: 0.682 (±0.054),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.048),
+ recall: 0.677 (±0.048),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 7, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.052),
+ recall: 0.680 (±0.052),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.690 (±0.050),
+ recall: 0.690 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.688 (±0.049),
+ recall: 0.688 (±0.049),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.050),
+ recall: 0.680 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.058),
+ recall: 0.680 (±0.058),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.700 (±0.060),
+ recall: 0.700 (±0.060),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.675 (±0.067),
+ recall: 0.675 (±0.067),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.683 (±0.068),
+ recall: 0.683 (±0.068),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.695 (±0.050),
+ recall: 0.695 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.685 (±0.069),
+ recall: 0.685 (±0.069),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'ball_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.051),
+ recall: 0.680 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.685 (±0.051),
+ recall: 0.685 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.042),
+ recall: 0.677 (±0.042),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.682 (±0.054),
+ recall: 0.682 (±0.054),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.048),
+ recall: 0.677 (±0.048),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 7, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.052),
+ recall: 0.680 (±0.052),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.690 (±0.050),
+ recall: 0.690 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.688 (±0.049),
+ recall: 0.688 (±0.049),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.050),
+ recall: 0.680 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.058),
+ recall: 0.680 (±0.058),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.700 (±0.060),
+ recall: 0.700 (±0.060),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.675 (±0.067),
+ recall: 0.675 (±0.067),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.683 (±0.068),
+ recall: 0.683 (±0.068),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.695 (±0.050),
+ recall: 0.695 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.685 (±0.069),
+ recall: 0.685 (±0.069),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.051),
+ recall: 0.680 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.685 (±0.051),
+ recall: 0.685 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.042),
+ recall: 0.677 (±0.042),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.682 (±0.054),
+ recall: 0.682 (±0.054),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.048),
+ recall: 0.677 (±0.048),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 7, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.052),
+ recall: 0.680 (±0.052),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.690 (±0.050),
+ recall: 0.690 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.688 (±0.049),
+ recall: 0.688 (±0.049),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.050),
+ recall: 0.680 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.058),
+ recall: 0.680 (±0.058),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.700 (±0.060),
+ recall: 0.700 (±0.060),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.675 (±0.067),
+ recall: 0.675 (±0.067),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.683 (±0.068),
+ recall: 0.683 (±0.068),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.695 (±0.050),
+ recall: 0.695 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.685 (±0.069),
+ recall: 0.685 (±0.069),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.051),
+ recall: 0.680 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.685 (±0.051),
+ recall: 0.685 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.042),
+ recall: 0.677 (±0.042),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.682 (±0.054),
+ recall: 0.682 (±0.054),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.048),
+ recall: 0.677 (±0.048),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 7, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.052),
+ recall: 0.680 (±0.052),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.690 (±0.050),
+ recall: 0.690 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.688 (±0.049),
+ recall: 0.688 (±0.049),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.050),
+ recall: 0.680 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.058),
+ recall: 0.680 (±0.058),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.700 (±0.060),
+ recall: 0.700 (±0.060),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.675 (±0.067),
+ recall: 0.675 (±0.067),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.683 (±0.068),
+ recall: 0.683 (±0.068),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.695 (±0.050),
+ recall: 0.695 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.685 (±0.069),
+ recall: 0.685 (±0.069),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.051),
+ recall: 0.680 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.685 (±0.051),
+ recall: 0.685 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.042),
+ recall: 0.677 (±0.042),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.682 (±0.054),
+ recall: 0.682 (±0.054),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.048),
+ recall: 0.677 (±0.048),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 7, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.052),
+ recall: 0.680 (±0.052),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.690 (±0.050),
+ recall: 0.690 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.688 (±0.049),
+ recall: 0.688 (±0.049),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.050),
+ recall: 0.680 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.058),
+ recall: 0.680 (±0.058),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.700 (±0.060),
+ recall: 0.700 (±0.060),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.675 (±0.067),
+ recall: 0.675 (±0.067),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.683 (±0.068),
+ recall: 0.683 (±0.068),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.695 (±0.050),
+ recall: 0.695 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.685 (±0.069),
+ recall: 0.685 (±0.069),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.051),
+ recall: 0.680 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.685 (±0.051),
+ recall: 0.685 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.042),
+ recall: 0.677 (±0.042),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.682 (±0.054),
+ recall: 0.682 (±0.054),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.048),
+ recall: 0.677 (±0.048),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 7, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.052),
+ recall: 0.680 (±0.052),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.690 (±0.050),
+ recall: 0.690 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.688 (±0.049),
+ recall: 0.688 (±0.049),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.050),
+ recall: 0.680 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.058),
+ recall: 0.680 (±0.058),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.700 (±0.060),
+ recall: 0.700 (±0.060),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.675 (±0.067),
+ recall: 0.675 (±0.067),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.683 (±0.068),
+ recall: 0.683 (±0.068),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.695 (±0.050),
+ recall: 0.695 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.685 (±0.069),
+ recall: 0.685 (±0.069),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'kd_tree', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.051),
+ recall: 0.680 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.685 (±0.051),
+ recall: 0.685 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.042),
+ recall: 0.677 (±0.042),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.682 (±0.054),
+ recall: 0.682 (±0.054),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.048),
+ recall: 0.677 (±0.048),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 7, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.052),
+ recall: 0.680 (±0.052),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.690 (±0.050),
+ recall: 0.690 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.688 (±0.049),
+ recall: 0.688 (±0.049),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.050),
+ recall: 0.680 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.058),
+ recall: 0.680 (±0.058),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.700 (±0.060),
+ recall: 0.700 (±0.060),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.675 (±0.067),
+ recall: 0.675 (±0.067),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.683 (±0.068),
+ recall: 0.683 (±0.068),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.695 (±0.050),
+ recall: 0.695 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.685 (±0.069),
+ recall: 0.685 (±0.069),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 10, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.051),
+ recall: 0.680 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.685 (±0.051),
+ recall: 0.685 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.042),
+ recall: 0.677 (±0.042),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.682 (±0.054),
+ recall: 0.682 (±0.054),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.048),
+ recall: 0.677 (±0.048),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 7, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.052),
+ recall: 0.680 (±0.052),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.690 (±0.050),
+ recall: 0.690 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.688 (±0.049),
+ recall: 0.688 (±0.049),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.050),
+ recall: 0.680 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.058),
+ recall: 0.680 (±0.058),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.700 (±0.060),
+ recall: 0.700 (±0.060),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.675 (±0.067),
+ recall: 0.675 (±0.067),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.683 (±0.068),
+ recall: 0.683 (±0.068),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.695 (±0.050),
+ recall: 0.695 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.685 (±0.069),
+ recall: 0.685 (±0.069),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 20, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.051),
+ recall: 0.680 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.685 (±0.051),
+ recall: 0.685 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.042),
+ recall: 0.677 (±0.042),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.682 (±0.054),
+ recall: 0.682 (±0.054),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.048),
+ recall: 0.677 (±0.048),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 7, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.052),
+ recall: 0.680 (±0.052),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.690 (±0.050),
+ recall: 0.690 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.688 (±0.049),
+ recall: 0.688 (±0.049),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.050),
+ recall: 0.680 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.058),
+ recall: 0.680 (±0.058),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.700 (±0.060),
+ recall: 0.700 (±0.060),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.675 (±0.067),
+ recall: 0.675 (±0.067),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.683 (±0.068),
+ recall: 0.683 (±0.068),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.695 (±0.050),
+ recall: 0.695 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.685 (±0.069),
+ recall: 0.685 (±0.069),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 30, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.051),
+ recall: 0.680 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.685 (±0.051),
+ recall: 0.685 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.042),
+ recall: 0.677 (±0.042),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.682 (±0.054),
+ recall: 0.682 (±0.054),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.048),
+ recall: 0.677 (±0.048),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 7, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.052),
+ recall: 0.680 (±0.052),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.690 (±0.050),
+ recall: 0.690 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.688 (±0.049),
+ recall: 0.688 (±0.049),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.050),
+ recall: 0.680 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.058),
+ recall: 0.680 (±0.058),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.700 (±0.060),
+ recall: 0.700 (±0.060),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.675 (±0.067),
+ recall: 0.675 (±0.067),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.683 (±0.068),
+ recall: 0.683 (±0.068),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.695 (±0.050),
+ recall: 0.695 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.685 (±0.069),
+ recall: 0.685 (±0.069),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 40, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.051),
+ recall: 0.680 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.685 (±0.051),
+ recall: 0.685 (±0.051),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.042),
+ recall: 0.677 (±0.042),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.682 (±0.054),
+ recall: 0.682 (±0.054),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.677 (±0.048),
+ recall: 0.677 (±0.048),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 7, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.052),
+ recall: 0.680 (±0.052),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.690 (±0.050),
+ recall: 0.690 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 9, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.688 (±0.049),
+ recall: 0.688 (±0.049),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.050),
+ recall: 0.680 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 11, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.680 (±0.058),
+ recall: 0.680 (±0.058),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.700 (±0.060),
+ recall: 0.700 (±0.060),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.675 (±0.067),
+ recall: 0.675 (±0.067),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'uniform'}
+INFO:Classification: precision: 0.683 (±0.068),
+ recall: 0.683 (±0.068),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 13, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.695 (±0.050),
+ recall: 0.695 (±0.050),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 1, 'classifier__weights': 'distance'}
+INFO:Classification: precision: 0.685 (±0.069),
+ recall: 0.685 (±0.069),
+ for {'classifier': KNeighborsClassifier(), 'classifier__algorithm': 'brute', 'classifier__leaf_size': 50, 'classifier__metric': 'minkowski', 'classifier__n_neighbors': 15, 'classifier__p': 2, 'classifier__weights': 'distance'}
+INFO:Classification: 
+The selected final model is the one with the highest recall and precision.
+Selected Model:
+mean_score_time                                                       0.004931
+mean_test_recall_micro                                                   0.715
+std_test_recall_micro                                                 0.052678
+mean_test_precision_micro                                                0.715
+std_test_precision_micro                                              0.052678
+rank_test_recall_micro                                                       1
+rank_test_precision_micro                                                    1
+params                       {'classifier': SVC(), 'classifier__C': 1.0, 'c...
+Name: 32, dtype: object
+INFO:Classification: Model + Hyperparameter Selection Duration: ~2 minutes
+INFO:Classification: Best estimator: Pipeline(steps=[('classifier', SVC())], verbose=True)
+INFO:Classification: Best params: {'memory': None, 'steps': [('classifier', SVC())], 'verbose': True, 'classifier': SVC(), 'classifier__C': 1.0, 'classifier__break_ties': False, 'classifier__cache_size': 200, 'classifier__class_weight': None, 'classifier__coef0': 0.0, 'classifier__decision_function_shape': 'ovr', 'classifier__degree': 3, 'classifier__gamma': 'scale', 'classifier__kernel': 'rbf', 'classifier__max_iter': -1, 'classifier__probability': False, 'classifier__random_state': None, 'classifier__shrinking': True, 'classifier__tol': 0.001, 'classifier__verbose': False}
+INFO:Classification:
+              precision    recall  f1-score   support
+
+           0       0.91      1.00      0.95        20
+           1       0.79      0.75      0.77        20
+           2       0.74      0.70      0.72        20
+           3       0.64      0.45      0.53        20
+           4       0.62      0.80      0.70        20
+
+    accuracy                           0.74       100
+   macro avg       0.74      0.74      0.73       100
+weighted avg       0.74      0.74      0.73       100
+
+INFO:Classification: Overall Accuracy 74.0%
+INFO:Classification: Finished
