@@ -1,6 +1,6 @@
 # MACHINE LEARNING ALGORITHM FUNCTIONS USED BY MAIN.PY
 # STATUS: WORKING
-# LAST UPDATED: 10/06/2024
+# LAST UPDATED: 12/06/2024
 
 
 import os
@@ -22,12 +22,12 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.svm import SVC
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import ComplementNB
-from sklearn.metrics import confusion_matrix, classification_report
+from sklearn.metrics import confusion_matrix, classification_report, accuracy_score
 from config import columns, feature_names, gesture_names
 
 
 default = False  # Enable to generate default metrics for all models using default parameters
-select = True  # Enable to select which gesture to use (if false use all gestures)
+select = False  # Enable to select which gesture to use (if false use all gestures)
 gesture_selection = [2, 3]  # indexes of selected gestures
 cv_splits = 10
 
@@ -215,6 +215,11 @@ def displayMetrics(y_test, y_pred, gestures: list, class_distribution: list, cma
     report = classification_report(y_true=y_test, y_pred=y_pred)
     print(report)
     logger.info(msg=f"\n{report}")
+    
+    # Compute and display accuracy
+    accuracy = accuracy_score(y_true=y_test, y_pred=y_pred, normalize=True)*100.0  # as percentage
+    print(f"Overall Accuracy: {accuracy}%")
+    logger.info(msg=f' Overall Accuracy {accuracy}%')
 
 
 def classifyFeatureData(hdfFile: str, test_split: float) -> None:
@@ -342,7 +347,7 @@ def classifyFeatureData(hdfFile: str, test_split: float) -> None:
             selector = SequentialFeatureSelector(estimator=SVC(), n_features_to_select=3, direction='forward')
             feature_pipe = Pipeline(memory=None, steps=[('selector', selector), ('classifier', SVC())], verbose=True)
             scores = ['precision_micro', 'recall_micro']
-            feature_search_space = [{'selector__estimator': [SVC(), KNeighborsClassifier()],
+            feature_search_space = [{'selector__estimator': [SVC(), KNeighborsClassifier(), ComplementNB()],
                                      'selector__n_features_to_select': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
                                      'selector__direction': ['forward', 'backward']}]
             feature_grid_search = GridSearchCV(estimator=feature_pipe, param_grid=feature_search_space, scoring=scores, refit=refit_strategy, cv=cv_splits, verbose=2)
@@ -375,7 +380,9 @@ def classifyFeatureData(hdfFile: str, test_split: float) -> None:
                                        'classifier__algorithm': ['auto', 'ball_tree', 'kd_tree', 'brute'],
                                        'classifier__leaf_size': [10, 20, 30, 40, 50],
                                        'classifier__p': [1, 2],
-                                       'classifier__metric': ['minkowski']}]
+                                       'classifier__metric': ['minkowski']},
+                                       {'classifier': [ComplementNB()],
+                                        'classifier__alpha': [1e-3, 1e-2, 1e-1, 1]}]
             grid_search = GridSearchCV(estimator=parameter_pipe, param_grid=parameter_search_space, scoring=scores, refit=refit_strategy, cv=cv_splits, verbose=2)
             try:
                 start = time.time()

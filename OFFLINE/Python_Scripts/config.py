@@ -1,5 +1,5 @@
 # CONFIG FILE
-# LAST UPDATED: 11/06/2024
+# LAST UPDATED: 12/06/2024
 
 
 NUM_CHANNELS = 2
@@ -26,5 +26,3 @@ feature_names = ['ch0_mav', 'ch1_mav',
                  'ch0_hj_c', 'ch1_hj_c']
 
 gesture_names = ['asl for 1', 'asl for 2', 'asl for 3', 'asl for 4', 'asl for 5']
-
-gesture_indexes = [0, 1, 2, 3, 4]

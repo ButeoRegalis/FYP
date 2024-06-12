@@ -1,13 +1,13 @@
 # FEATURE DATA DISTRIBUTION VISUALISATION FUNCTION
 # STATUS: WORKING
-# LAST UPDATED: 11/06/2024
+# LAST UPDATED: 12/06/2024
 
 
 import tables as tb
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from config import NUM_GESTURES, NUM_CHANNELS, columns, gesture_names, gesture_indexes
+from config import NUM_GESTURES, NUM_CHANNELS, columns, gesture_names
 
 
 def list_table_nums(h5file: tb.File) -> list:
@@ -67,14 +67,14 @@ def visualiseFeatureDistribution(hdfFile: str) -> None:
         hj_a_avgs = []
         hj_m_avgs = []
         hj_c_avgs = []
-        mav_yerrs = []
-        rms_yerrs = []
-        wl_yerrs = []
-        zc_yerrs = []
-        wa_yerrs = []
-        hj_a_yerrs = []
-        hj_m_yerrs = []
-        hj_c_yerrs = []
+        mav_yerrs = [[], []]
+        rms_yerrs = [[], []]
+        wl_yerrs = [[], []]
+        zc_yerrs = [[], []]
+        wa_yerrs = [[], []]
+        hj_a_yerrs = [[], []]
+        hj_m_yerrs = [[], []]
+        hj_c_yerrs = [[], []]
         for l in range(0, len(gesture_names), 1):
             df = dataframe.loc[dataframe['label'] == l]
             # MAV
@@ -121,19 +121,28 @@ def visualiseFeatureDistribution(hdfFile: str) -> None:
         for g in range(0, NUM_GESTURES, 1):
             for c in range(0, NUM_CHANNELS, 1):
                 i += c
-                mav_yerrs.append([abs(mav_avgs[i] - np.amin(a=mav_list[g][0])), abs(mav_avgs[i] - np.amax(a=mav_list[g][1]))])
-                rms_yerrs.append([abs(rms_avgs[i] - np.amin(a=rms_list[g][0])), abs(rms_avgs[i] - np.amax(a=rms_list[g][1]))])
-                wl_yerrs.append([abs(wl_avgs[i] - np.amin(a=wl_list[g][0])), abs(wl_avgs[i] - np.amax(a=wl_list[g][1]))])
-                zc_yerrs.append([abs(zc_avgs[i] - np.amin(a=zc_list[g][0])), abs(zc_avgs[i] - np.amax(a=zc_list[g][1]))])
-                wa_yerrs.append([abs(wa_avgs[i] - np.amin(a=wa_list[g][0])), abs(wa_avgs[i] - np.amax(a=wa_list[g][1]))])
-                hj_a_yerrs.append([abs(hj_a_avgs[i] - np.amin(a=hj_a_list[g][0])), abs(hj_a_avgs[i] - np.amax(a=hj_a_list[g][1]))])
-                hj_m_yerrs.append([abs(hj_m_avgs[i] - np.amin(a=hj_m_list[g][0])), abs(hj_m_avgs[i] - np.amax(a=hj_m_list[g][1]))])
-                hj_c_yerrs.append([abs(hj_c_avgs[i] - np.amin(a=hj_c_list[g][0])), abs(hj_c_avgs[i] - np.amax(a=hj_c_list[g][1]))])
-        labels = np.repeat(a=np.arange(start=0, stop=5, step=1), repeats=2)
-        print(f"Labels: {labels}")
+                mav_yerrs[0].append(abs(mav_avgs[i] - np.amin(a=mav_list[g][0])))  # min error
+                mav_yerrs[1].append(abs(mav_avgs[i] - np.amax(a=mav_list[g][1])))  # max error
+                rms_yerrs[0].append(abs(rms_avgs[i] - np.amin(a=rms_list[g][0])))
+                rms_yerrs[1].append(abs(rms_avgs[i] - np.amax(a=rms_list[g][1])))
+                wl_yerrs[0].append(abs(wl_avgs[i] - np.amin(a=wl_list[g][0])))
+                wl_yerrs[1].append(abs(wl_avgs[i] - np.amax(a=wl_list[g][1])))
+                zc_yerrs[0].append(abs(zc_avgs[i] - np.amin(a=zc_list[g][0])))
+                zc_yerrs[1].append(abs(zc_avgs[i] - np.amax(a=zc_list[g][1])))
+                wa_yerrs[0].append(abs(wa_avgs[i] - np.amin(a=wa_list[g][0])))
+                wa_yerrs[1].append(abs(wa_avgs[i] - np.amax(a=wa_list[g][1])))
+                hj_a_yerrs[0].append(abs(hj_a_avgs[i] - np.amin(a=hj_a_list[g][0])))
+                hj_a_yerrs[1].append(abs(hj_a_avgs[i] - np.amax(a=hj_a_list[g][1])))
+                hj_m_yerrs[0].append(abs(hj_m_avgs[i] - np.amin(a=hj_m_list[g][0])))
+                hj_m_yerrs[1].append(abs(hj_m_avgs[i] - np.amax(a=hj_m_list[g][1])))
+                hj_c_yerrs[0].append(abs(hj_c_avgs[i] - np.amin(a=hj_c_list[g][0])))
+                hj_c_yerrs[1].append(abs(hj_c_avgs[i] - np.amax(a=hj_c_list[g][1])))
+        labels = np.arange(start=0, stop=10, step=1)
+        #print(f"Labels: {labels}")
 
         # PLOT DATA
-        colours = ['red', 'orange', 'yellowgreen', 'deepskyblue', 'darkorchid']
+        colours = ['red', 'red', 'orange', 'orange', 'yellowgreen', 'yellowgreen', 'deepskyblue', 'deepskyblue', 'darkorchid', 'darkorchid']
+        xtick_labels = ['asl for 1 (CH1)', 'asl for 1 (CH2)', 'asl for 2 (CH1)', 'asl for 2 (CH2)', 'asl for 3 (CH1)', 'asl for 3 (CH2)', 'asl for 4 (CH1)', 'asl for 4 (CH2)', 'asl for 5 (CH1)', 'asl for 5 (CH2)']
         pad = 1.0
         figsize = (8, 10)
         plt.figure(num=1, figsize=figsize)
@@ -141,7 +150,7 @@ def visualiseFeatureDistribution(hdfFile: str) -> None:
         plt.tight_layout(pad=pad)
         plt.errorbar(x=labels, y=mav_avgs, yerr=mav_yerrs, fmt='none', ecolor='darkgray')
         plt.scatter(x=labels, y=mav_avgs, c=colours)
-        plt.xticks(ticks=gesture_indexes, labels=gesture_names)
+        plt.xticks(ticks=labels, labels=xtick_labels)
         plt.ylim(0, 3.3)
         plt.yticks(ticks=np.arange(start=0, stop=3.6, step=0.3))
         plt.title(label='MAV')
@@ -150,7 +159,7 @@ def visualiseFeatureDistribution(hdfFile: str) -> None:
         plt.tight_layout(pad=pad)
         plt.errorbar(x=labels, y=rms_avgs, yerr=rms_yerrs, fmt='none', ecolor='darkgray')
         plt.scatter(x=labels, y=rms_avgs, c=colours)
-        plt.xticks(ticks=gesture_indexes, labels=gesture_names)
+        plt.xticks(ticks=labels, labels=xtick_labels)
         plt.ylim(0, 3.3)
         plt.yticks(ticks=np.arange(start=0, stop=3.6, step=0.3))
         plt.title(label='RMS')
@@ -159,7 +168,7 @@ def visualiseFeatureDistribution(hdfFile: str) -> None:
         plt.tight_layout(pad=pad)
         plt.errorbar(x=labels, y=wl_avgs, yerr=wl_yerrs, fmt='none', ecolor='darkgray')
         plt.scatter(x=labels, y=wl_avgs, c=colours)
-        plt.xticks(ticks=gesture_indexes, labels=gesture_names)
+        plt.xticks(ticks=labels, labels=xtick_labels)
         plt.ylim(0, 3.3)
         plt.yticks(ticks=np.arange(start=0, stop=3.6, step=0.3))
         plt.title(label='WL')
@@ -168,7 +177,7 @@ def visualiseFeatureDistribution(hdfFile: str) -> None:
         plt.tight_layout(pad=pad)
         plt.errorbar(x=labels, y=zc_avgs, yerr=zc_yerrs, fmt='none', ecolor='darkgray')
         plt.scatter(x=labels, y=zc_avgs, c=colours)
-        plt.xticks(ticks=gesture_indexes, labels=gesture_names)
+        plt.xticks(ticks=labels, labels=xtick_labels)
         plt.ylim(bottom=0)
         plt.title(label='ZC')
         plt.show()
@@ -178,7 +187,7 @@ def visualiseFeatureDistribution(hdfFile: str) -> None:
         plt.tight_layout(pad=pad)
         plt.errorbar(x=labels, y=wa_avgs, yerr=wa_yerrs, fmt='none', ecolor='darkgray')
         plt.scatter(x=labels, y=wa_avgs, c=colours)
-        plt.xticks(ticks=gesture_indexes, labels=gesture_names)
+        plt.xticks(ticks=labels, labels=xtick_labels)
         plt.ylim(bottom=0)
         plt.title(label='WA')
 
@@ -186,7 +195,7 @@ def visualiseFeatureDistribution(hdfFile: str) -> None:
         plt.tight_layout(pad=pad)
         plt.errorbar(x=labels, y=hj_a_avgs, yerr=hj_a_yerrs, fmt='none', ecolor='darkgray')
         plt.scatter(x=labels, y=hj_a_avgs, c=colours)
-        plt.xticks(ticks=gesture_indexes, labels=gesture_names)
+        plt.xticks(ticks=labels, labels=xtick_labels)
         plt.ylim(bottom=0)
         plt.title(label='HJ_A')
 
@@ -194,7 +203,7 @@ def visualiseFeatureDistribution(hdfFile: str) -> None:
         plt.tight_layout(pad=pad)
         plt.errorbar(x=labels, y=hj_m_avgs, yerr=hj_m_yerrs, fmt='none', ecolor='darkgray')
         plt.scatter(x=labels, y=hj_m_avgs, c=colours)
-        plt.xticks(ticks=gesture_indexes, labels=gesture_names)
+        plt.xticks(ticks=labels, labels=xtick_labels)
         plt.ylim(bottom=0)
         plt.title(label='HJ_M')
 
@@ -202,7 +211,7 @@ def visualiseFeatureDistribution(hdfFile: str) -> None:
         plt.tight_layout(pad=pad)
         plt.errorbar(x=labels, y=hj_c_avgs, yerr=hj_c_yerrs, fmt='none', ecolor='darkgray')
         plt.scatter(x=labels, y=hj_c_avgs, c=colours)
-        plt.xticks(ticks=gesture_indexes, labels=gesture_names)
+        plt.xticks(ticks=labels, labels=xtick_labels)
         plt.ylim(bottom=0)
         plt.title(label='HJ_C')
         plt.show()

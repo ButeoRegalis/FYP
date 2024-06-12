@@ -7,7 +7,7 @@
             "request": "launch",
             "program": "/Users/proto/Documents/GitHub/FYP/OFFLINE/Python_Scripts/main.py",
             "console": "integratedTerminal",
-            "args": ["F", "--port", "5", "--baud", "115200", "--reps", "5"],
+            "args": ["C", "--splt", "20"],
             "autoReload": {
                 "enable": false
             },
