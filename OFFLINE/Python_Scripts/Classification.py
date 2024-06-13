@@ -370,19 +370,19 @@ def classifyFeatureData(hdfFile: str, test_split: float) -> None:
             opt_X_test = X_test_dataframe[selected_features]
             parameter_pipe = Pipeline(memory=None, steps=[('classifier', SVC())], verbose=True)
             parameter_search_space = [{'classifier': [SVC()],
-                                       'classifier__C': [0.01, 0.1, 1.0, 10.0, 100.0, 1000.0, 10000.0],
+                                       'classifier__C': [0.001, 0.01, 0.1, 1.0, 10.0, 100.0, 1000.0, 10000.0],
                                        'classifier__kernel': ['rbf', 'linear'],
                                        'classifier__gamma': ['scale', 'auto', 1e-3, 1e-4],
                                        'classifier__decision_function_shape': ['ovr', 'ovo']},
                                        {'classifier': [KNeighborsClassifier()],
-                                       'classifier__n_neighbors': [3, 5, 7, 9, 11, 13, 15],
+                                       'classifier__n_neighbors': [1, 3, 5, 7, 9, 11, 13, 15],
                                        'classifier__weights': ['uniform', 'distance'],
                                        'classifier__algorithm': ['auto', 'ball_tree', 'kd_tree', 'brute'],
                                        'classifier__leaf_size': [10, 20, 30, 40, 50],
                                        'classifier__p': [1, 2],
                                        'classifier__metric': ['minkowski']},
                                        {'classifier': [ComplementNB()],
-                                        'classifier__alpha': [1e-3, 1e-2, 1e-1, 1]}]
+                                        'classifier__alpha': [1e-3, 1e-2, 1e-1, 1.0]}]
             grid_search = GridSearchCV(estimator=parameter_pipe, param_grid=parameter_search_space, scoring=scores, refit=refit_strategy, cv=cv_splits, verbose=2)
             try:
                 start = time.time()
