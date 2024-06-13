@@ -1,4 +1,4 @@
-# MXEN4000/4004 Final Year Project
+# MXEN4000/4004 Final Year Project (2 Channel Process)
 **Project Title:** Human-Machine interface through EMG sensors biofeedback and its application in rehabilitation or assistive systems  
 **Project Subtitle:** Gesture Classification Using EMG Sensors and Machine Learning  
 **Supervisor:** Prof. Tele Tan  
@@ -10,11 +10,11 @@
 #### FeatureDataCollection
 fdcTransmitter.ino: WORKING  
 - Hardware: Teensy 3.2  
-- Reads adc data and sends over RF to Receiver  
+- Reads adc data for 2 sensor channels and sends over RF to Receiver  
 
 fdcReceiver.ino: WORKING  
 - Hardware: Teensy 4.0  
-- Reads data from Transmitter and performs feature extraction  
+- Reads data from Transmitter and performs feature extraction on the data for each sensor channel  
 - Sends feature data to PC over serial  
 - Features Extracted: Mean Absolute Value, Root Mean Square, Waveform Length, Zero Crossings, Willison Amplitude and the Hjorth time-domain features Activity, Mobility, and Complexity  
 
@@ -36,13 +36,13 @@ FeatureCollection.py: WORKING
 - Read feature struct sent over serial from Teensy 4.0  
 - Decode and save feature data into .h5 file structure  
 
-Classification.py: IN DEVELOPMENT  
+Classification.py: WORKING  
 - Perform supervised machine learning  
-- Classification Algorithms: Support Vector Machine, K-Means Cluster, Naive Bayes  
+- Classification Algorithms: Support Vector Machine, K Nearest Neighbour, Complement Naive Bayes  
 
 #### Tools
 Visualisation.py: WORKING  
-- Plot feature data distribution  
+- Plot feature data distributions  
 
 RawDataCollection.py: WORKING  
 - Collect raw data for m repetitions of n gestures  
@@ -56,27 +56,6 @@ RawDataCollection.py: WORKING
 - Directory containging the confusion matrices and classification reports for the offline classification runs  
 
 
-## ONLINE
-### Arduino_Scripts
-onTransmitter.ino: DEVELOPMENT  
-- Hardware: Teensy 3.2  
-- Reads adc data and sends over RF to Receiver  
-
-onReceiver.ino: DEVELOPMENT  
-- Hardware: Teensy 4.0  
-- Detects start of possible gesture based on readings from Transmitter  
-- Records data until end of gesture detected otherwise data is discarded and process restarted  
-- Performs feature extraction on possible gesture data and sends to PC over serial  
-
-### Python_Scripts
-ClassificationPipe.py: PLANNED  
-- Trains optimal classification model based on findings from offline process  
-- Reads and decodes each feature struct sent from Receiver  
-- Attempts to classify feature data as one of the possible gestures  
-
-### Threshold_Computation
-- Directory containing .xlsx files containing data from RawDataCollection.py script for use in computing the on/off thresholds for the online scripts  
-
 ## TOOLS
 ### EmgPlotter
 nrf24_transmitter.ino: WORKING  
@@ -89,6 +68,7 @@ nrf24_receiver.ino: WORKING
 
 EMG_PLOTTER.exe: WORKING  
 - GUI Executable provided by Amir Shabazi for viewing the sEMG signals for all four channels  
+
 
 ## Viewing .h5 Files
 Can use ViTables to view .h5 and .hdf5 file contents  
