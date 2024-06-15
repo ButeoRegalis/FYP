@@ -7,6 +7,7 @@ import tables as tb
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.lines import Line2D
 from config import NUM_GESTURES, NUM_CHANNELS, columns, gesture_names
 
 
@@ -142,81 +143,100 @@ def visualiseFeatureDistribution(hdfFile: str) -> None:
 
         # PLOT DATA
         colours = ['red', 'red', 'orange', 'orange', 'yellowgreen', 'yellowgreen', 'deepskyblue', 'deepskyblue', 'darkorchid', 'darkorchid']
-        xtick_labels = ['asl for 1 (CH1)', 'asl for 1 (CH2)', 'asl for 2 (CH1)', 'asl for 2 (CH2)', 'asl for 3 (CH1)', 'asl for 3 (CH2)', 'asl for 4 (CH1)', 'asl for 4 (CH2)', 'asl for 5 (CH1)', 'asl for 5 (CH2)']
+        xtick_labels = np.repeat(a=['CH1', 'CH2'], repeats=5, axis=0)
+        #xtick_labels = ['CH1', 'CH2', 'CH1', 'CH2', 'CH1', 'CH2', 'asl for 4 (CH1)', 'asl for 4 (CH2)', 'asl for 5 (CH1)', 'asl for 5 (CH2)']
+        s = 20.0
         pad = 1.0
-        figsize = (8, 10)
+        figsize = (8, 12)
+        custom_legend = [Line2D(xdata=[0], ydata=[0], marker='o', color='w', label='asl for 1', markerfacecolor='red', markersize=7.5),
+                        Line2D(xdata=[0], ydata=[0], marker='o', color='w', label='asl for 2', markerfacecolor='orange', markersize=7.5),
+                        Line2D(xdata=[0], ydata=[0], marker='o', color='w', label='asl for 3', markerfacecolor='yellowgreen', markersize=7.5),
+                        Line2D(xdata=[0], ydata=[0], marker='o', color='w', label='asl for 4', markerfacecolor='deepskyblue', markersize=7.5),
+                        Line2D(xdata=[0], ydata=[0], marker='o', color='w', label='asl for 5', markerfacecolor='darkorchid', markersize=7.5)]
+
         plt.figure(num=1, figsize=figsize)
         plt.subplot(4, 1, 1)
         plt.tight_layout(pad=pad)
         plt.errorbar(x=labels, y=mav_avgs, yerr=mav_yerrs, fmt='none', ecolor='darkgray')
-        plt.scatter(x=labels, y=mav_avgs, c=colours)
-        plt.xticks(ticks=labels, labels=xtick_labels)
+        plt.scatter(x=labels, y=mav_avgs, s=s, c=colours)
+        plt.xticks(ticks=labels, labels=xtick_labels, rotation=30)
         plt.ylim(0, 3.3)
         plt.yticks(ticks=np.arange(start=0, stop=3.6, step=0.3))
-        plt.title(label='MAV')
+        plt.ylabel(ylabel="Voltage [V]")
+        plt.legend(handles=custom_legend, loc='lower left', bbox_to_anchor=(0, 1), ncols=NUM_GESTURES, fontsize='small')
+        plt.title(label='MAV', loc='right')
 
         plt.subplot(4, 1, 2)
         plt.tight_layout(pad=pad)
         plt.errorbar(x=labels, y=rms_avgs, yerr=rms_yerrs, fmt='none', ecolor='darkgray')
-        plt.scatter(x=labels, y=rms_avgs, c=colours)
-        plt.xticks(ticks=labels, labels=xtick_labels)
+        plt.scatter(x=labels, y=rms_avgs, s=s, c=colours)
+        plt.xticks(ticks=labels, labels=xtick_labels, rotation=30)
         plt.ylim(0, 3.3)
         plt.yticks(ticks=np.arange(start=0, stop=3.6, step=0.3))
+        plt.ylabel(ylabel="Voltage [V]")
         plt.title(label='RMS')
 
         plt.subplot(4, 1, 3)
         plt.tight_layout(pad=pad)
         plt.errorbar(x=labels, y=wl_avgs, yerr=wl_yerrs, fmt='none', ecolor='darkgray')
-        plt.scatter(x=labels, y=wl_avgs, c=colours)
-        plt.xticks(ticks=labels, labels=xtick_labels)
+        plt.scatter(x=labels, y=wl_avgs, s=s, c=colours)
+        plt.xticks(ticks=labels, labels=xtick_labels, rotation=30)
         plt.ylim(0, 3.3)
         plt.yticks(ticks=np.arange(start=0, stop=3.6, step=0.3))
+        plt.ylabel(ylabel="Voltage [V]")
         plt.title(label='WL')
 
         plt.subplot(4, 1, 4)
         plt.tight_layout(pad=pad)
         plt.errorbar(x=labels, y=zc_avgs, yerr=zc_yerrs, fmt='none', ecolor='darkgray')
-        plt.scatter(x=labels, y=zc_avgs, c=colours)
-        plt.xticks(ticks=labels, labels=xtick_labels)
+        plt.scatter(x=labels, y=zc_avgs, s=s, c=colours)
+        plt.xticks(ticks=labels, labels=xtick_labels, rotation=30)
         plt.ylim(bottom=0)
+        plt.ylabel(ylabel="No. Crossings")
         plt.title(label='ZC')
+        plt.savefig(fname="Feature_Distribution_1.png", format='png')
         plt.show()
 
         plt.figure(num=2, figsize=figsize)
         plt.subplot(4, 1, 1)
         plt.tight_layout(pad=pad)
         plt.errorbar(x=labels, y=wa_avgs, yerr=wa_yerrs, fmt='none', ecolor='darkgray')
-        plt.scatter(x=labels, y=wa_avgs, c=colours)
-        plt.xticks(ticks=labels, labels=xtick_labels)
+        plt.scatter(x=labels, y=wa_avgs, s=s, c=colours)
+        plt.xticks(ticks=labels, labels=xtick_labels, rotation=30)
         plt.ylim(bottom=0)
-        plt.title(label='WA')
+        plt.ylabel(ylabel="No. Exceedences")
+        plt.legend(handles=custom_legend, loc='lower left', bbox_to_anchor=(0, 1), ncols=NUM_GESTURES, fontsize='small')
+        plt.title(label='WA', loc='right')
 
         plt.subplot(4, 1, 2)
         plt.tight_layout(pad=pad)
         plt.errorbar(x=labels, y=hj_a_avgs, yerr=hj_a_yerrs, fmt='none', ecolor='darkgray')
-        plt.scatter(x=labels, y=hj_a_avgs, c=colours)
-        plt.xticks(ticks=labels, labels=xtick_labels)
+        plt.scatter(x=labels, y=hj_a_avgs, s=s, c=colours)
+        plt.xticks(ticks=labels, labels=xtick_labels, rotation=30)
         plt.ylim(bottom=0)
+        plt.ylabel(ylabel="Voltage Squared [V^2]")
         plt.title(label='HJ_A')
 
         plt.subplot(4, 1, 3)
         plt.tight_layout(pad=pad)
         plt.errorbar(x=labels, y=hj_m_avgs, yerr=hj_m_yerrs, fmt='none', ecolor='darkgray')
-        plt.scatter(x=labels, y=hj_m_avgs, c=colours)
-        plt.xticks(ticks=labels, labels=xtick_labels)
+        plt.scatter(x=labels, y=hj_m_avgs, s=s, c=colours)
+        plt.xticks(ticks=labels, labels=xtick_labels, rotation=30)
         plt.ylim(bottom=0)
+        plt.ylabel(ylabel="Ratio per Time [t^-1]")
         plt.title(label='HJ_M')
 
         plt.subplot(4, 1, 4)
         plt.tight_layout(pad=pad)
         plt.errorbar(x=labels, y=hj_c_avgs, yerr=hj_c_yerrs, fmt='none', ecolor='darkgray')
-        plt.scatter(x=labels, y=hj_c_avgs, c=colours)
-        plt.xticks(ticks=labels, labels=xtick_labels)
+        plt.scatter(x=labels, y=hj_c_avgs, s=s, c=colours)
+        plt.xticks(ticks=labels, labels=xtick_labels, rotation=30)
         plt.ylim(bottom=0)
         plt.title(label='HJ_C')
+        plt.ylabel(ylabel="Dimensionless")
+        plt.savefig(fname="Feature_Distribution_2.png", format='png')
         plt.show()
 
-        plt.show()
         print("DONE.")
     except:
         print("EXCEPTION OCCURED IN VISUALISATION PROCESS!\n")
