@@ -1,6 +1,6 @@
 # FEATURE DATA DISTRIBUTION VISUALISATION FUNCTION
 # STATUS: WORKING
-# LAST UPDATED: 12/06/2024
+# LAST UPDATED: 16/06/2024
 
 
 import tables as tb
@@ -143,8 +143,7 @@ def visualiseFeatureDistribution(hdfFile: str) -> None:
 
         # PLOT DATA
         colours = ['red', 'red', 'orange', 'orange', 'yellowgreen', 'yellowgreen', 'deepskyblue', 'deepskyblue', 'darkorchid', 'darkorchid']
-        xtick_labels = np.repeat(a=['CH1', 'CH2'], repeats=5, axis=0)
-        #xtick_labels = ['CH1', 'CH2', 'CH1', 'CH2', 'CH1', 'CH2', 'asl for 4 (CH1)', 'asl for 4 (CH2)', 'asl for 5 (CH1)', 'asl for 5 (CH2)']
+        xtick_labels = ['CH1', 'CH2', 'CH1', 'CH2', 'CH1', 'CH2', 'CH1', 'CH2', 'CH1', 'CH2']
         s = 20.0
         pad = 1.0
         figsize = (8, 12)
@@ -191,7 +190,8 @@ def visualiseFeatureDistribution(hdfFile: str) -> None:
         plt.errorbar(x=labels, y=zc_avgs, yerr=zc_yerrs, fmt='none', ecolor='darkgray')
         plt.scatter(x=labels, y=zc_avgs, s=s, c=colours)
         plt.xticks(ticks=labels, labels=xtick_labels, rotation=30)
-        plt.ylim(bottom=0)
+        plt.ylim(0, 175)
+        plt.yticks(ticks=np.arange(start=0, stop=200, step=25))
         plt.ylabel(ylabel="No. Crossings")
         plt.title(label='ZC')
         plt.savefig(fname="Feature_Distribution_1.png", format='png')
@@ -203,7 +203,8 @@ def visualiseFeatureDistribution(hdfFile: str) -> None:
         plt.errorbar(x=labels, y=wa_avgs, yerr=wa_yerrs, fmt='none', ecolor='darkgray')
         plt.scatter(x=labels, y=wa_avgs, s=s, c=colours)
         plt.xticks(ticks=labels, labels=xtick_labels, rotation=30)
-        plt.ylim(bottom=0)
+        plt.ylim(0, 175)
+        plt.yticks(ticks=np.arange(start=0, stop=200, step=25))
         plt.ylabel(ylabel="No. Exceedences")
         plt.legend(handles=custom_legend, loc='lower left', bbox_to_anchor=(0, 1), ncols=NUM_GESTURES, fontsize='small')
         plt.title(label='WA', loc='right')
